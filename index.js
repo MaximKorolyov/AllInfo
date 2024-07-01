@@ -4,6 +4,7 @@ const path = require('path');
 const homeRoutes = require('./routes/home');
 const b_listRoutes = require('./routes/B_list');
 const authRoutes = require('./routes/auth');
+const regRoutes = require('./routes/reg');
 
 const app = express();
 const PORT = 4000;
@@ -33,6 +34,9 @@ app.use(express.urlencoded({extended: true}));
 app.use('/', homeRoutes);
 app.use('/boards-list', b_listRoutes);
 app.use('/auth', authRoutes);
+app.use('/reg', regRoutes);
+
+
 
 
 app.listen(PORT, () => {

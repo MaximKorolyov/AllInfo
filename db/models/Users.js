@@ -11,12 +11,6 @@ module.exports = function (sequalize) {
         },
         pass: {
             type: Sequalize.STRING(255),
-        },
-        email: {
-            type: Sequalize.STRING(255),
-        },
-        role: {
-            type: Sequalize.INTEGER(),
         }
     }, {
         timestamps: false,
